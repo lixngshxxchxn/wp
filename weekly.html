@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>윤독</title>
+    <link rel="icon" type="image/png" href="favi.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:500,600,700" rel="stylesheet">
+    <style>
+
+        * {
+            text-align: center;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #000000;
+        }
+
+        header {
+            background-color: #f1f1f1;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .head {
+            width: 100px;
+            height: auto;
+        }
+
+        .float {
+            position: fixed;
+            top: 85%;
+            left: 30%;
+            background-color: #f1f1f1;
+            padding: 10px 0 10px 0;
+            text-align: center;
+            width: 40%;
+            border-radius: 20px;
+
+        }
+
+        .float ul {
+            list-style-type: none;
+            padding: 0;
+            
+        }
+
+        .float ul li {
+            display: inline;
+            margin: 10px;
+            padding: 10px 20px 10px 20px;
+        }
+
+        .float ul li a {
+            color: #747474;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .float ul li a:hover {
+            color: #000000;
+        }
+
+        div{
+            padding-top: 200px;
+        }
+
+        div img{
+            width: 300px;
+        }
+
+        .week{
+            position: relative;
+        }
+
+        .hidden-text {
+            display: none;
+            background-color: #f1f1f1;
+            padding: 150px 20px 20px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .float {
+                left: 10%;
+                width: 80%; 
+                max-width: 600px; 
+                border-radius: 20px;
+            }
+
+            .float ul li {
+                margin: 0 auto;
+                padding: 5px 10px 5px 10px;
+            }
+        }
+ 
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" class="head">
+    </header>
+
+    <div class="week">
+        <img src="weekly.png" id="book-img" onclick="toggleText()">
+        <div class="hidden-text" id="book-text" style="position: absolute; top: 30%; left: 25%; width: 50%; height: 50%; display: none; z-index: 2;" onclick="hideText()">
+            책을 만들기 전 출판사에서는 교정쇄와 원고를 대조하여 오자, 오식, 배열, 색 따위를 바르게 고치는 ‘교정’을 진행한다.</br>
+            작은 부분까지 확인해야만 전체적인 책의 퀄리티를 올릴 수 있다. 출판사마다 이 교정법이 조금씩 다른데,</br>
+            '창비'는 수관형사와 단위성 의존명사, 보조용언을 붙여 출판한다.</br>
+            '문학동네'에서는 보조용언만 붙이고, '열린책들'은 본용언이 한 단어일 경우 보조용언을 붙인다.</br>
+            '민음사'는 띄어쓰기 원칙을 준수한다.
+        </div>
+    </div>
+
+
+    <div class="float">
+        <ul>
+            <li><a href="index.html">홈</a></li>
+            <li><a href="pubhouse.html">출판사</a></li>
+            <li><a href="recc.html">추천 도서</a></li>
+            <li><a href="weekly.html">금주의 정보</a></li>
+            <li><a href="quarter.html">계간지</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleText() {
+            var text = document.getElementById("book-text");
+            if (text.style.display === "none") {
+                text.style.display = "block";
+            } else if (text.style.display === "block") {
+                text.style.display = "none";
+            }
+        }
+
+        function hideText() {
+            var text = document.getElementById("book-text");
+            if (text.style.display === "block") {
+                text.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

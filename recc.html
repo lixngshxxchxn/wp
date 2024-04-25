@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>윤독</title>
+    <link rel="icon" type="image/png" href="favi.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:500,600,700" rel="stylesheet">
+    <style>
+
+        *{
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        h1{
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        header {
+            background-color: #f1f1f1;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .head {
+            width: 100px;
+            height: auto;
+        }
+
+        .float {
+            position: fixed;
+            top: 85%;
+            left: 30%;
+            background-color: #f1f1f1;
+            padding: 10px 0 10px 0;
+            text-align: center;
+            width: 40%;
+            border-radius: 20px;
+
+        }
+
+        .float ul {
+            list-style-type: none;
+            padding: 0;
+            
+        }
+
+        .float ul li {
+            display: inline;
+            margin: 10px;
+            padding: 10px 20px 10px 20px;
+        }
+
+        .float ul li a {
+            color: #747474;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .float ul li a:hover {
+            color: #000000;
+        }
+
+        table{
+            margin: 0 auto;
+            font-weight: 600;
+            padding-top: 70px;
+        }
+
+        table img{
+            width: 200px;
+        }
+
+        td{
+            padding: 0 100px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .float {
+                left: 10%;
+                width: 80%; 
+                max-width: 600px; 
+                border-radius: 20px;
+            }
+
+            .float ul li {
+                margin: 0 auto;
+                padding: 5px 10px 5px 10px;
+            }
+        }
+ 
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" class="head">
+    </header>
+
+    <h1>추천 도서</h1>
+
+    <div class="book">
+        <table>
+            <tr>
+                <td><img src="sjc.jpg"></td>
+                <td><img src="naengmyeon.jpg"></td>
+                <td><img src="paswae.png"></td>
+            </tr>
+            <tr>
+                <td>샤워젤과 소다수</td>
+                <td>냉면</td>
+                <td>파쇄</td>
+            </tr>
+        </table>
+    </div>
+    
+
+    <div class="float">
+        <ul>
+            <li><a href="index.html">홈</a></li>
+            <li><a href="pubhouse.html">출판사</a></li>
+            <li><a href="recc.html">추천 도서</a></li>
+            <li><a href="weekly.html">금주의 정보</a></li>
+            <li><a href="quarter.html">계간지</a></li>
+        </ul>
+    </div>
+
+    <script>
+
+
+    </script>
+</body>
+</html>

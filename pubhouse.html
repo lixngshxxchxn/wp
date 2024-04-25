@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>윤독</title>
+    <link rel="icon" type="image/png" href="favi.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:500,600,700" rel="stylesheet">
+    <style>
+
+        *{
+            text-align: center;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        header {
+            background-color: #f1f1f1;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .head {
+            width: 100px;
+            height: auto;
+        }
+
+        div {
+            padding: 40px;
+        }
+
+        .float {
+            position: fixed;
+            top: 85%;
+            left: 30%;
+            background-color: #f1f1f1;
+            padding: 10px 0 10px 0;
+            text-align: center;
+            width: 40%;
+            border-radius: 20px;
+
+        }
+
+        .float ul {
+            list-style-type: none;
+            padding: 0;
+            
+        }
+
+        .float ul li {
+            display: inline;
+            margin: 10px;
+            padding: 10px 20px 10px 20px;
+        }
+
+        .float ul li a {
+            color: #747474;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .float ul li a:hover {
+            color: #000000;
+        }
+
+        .md, .wh, .sh{
+            margin-top: 200px;
+            padding: 50px;
+        }
+
+        .wh{
+            margin-bottom: 200px;
+        }
+
+
+        div img{
+            width: 150px;
+        }
+
+        h1{
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .float {
+                left: 10%;
+                width: 80%; 
+                max-width: 600px; 
+                border-radius: 20px;
+            }
+
+            .float ul li {
+                margin: 0 auto;
+                padding: 5px 10px 5px 10px;
+            }
+        }
+ 
+        p{
+            font-weight: 600;
+        }
+        
+        .highlight {
+            background-color: #f1f1f1;
+            display: inline-block;
+            padding: 0px 20px 30px 20px; 
+            border-radius: 10px;
+        }
+
+        .re{
+            color:#747474;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" class="head">
+    </header>
+
+    <h1>선호 출판사 리스트</h1>
+
+    <div class="md">
+        <a href="https://www.munhak.com/"><img src="md.jpg"></a>
+        <p>소장 목록:</p>
+        <p class="highlight"></br></br>2023 겨울 통권 117호</br></br>2024 봄 통권 118호</br></br>샤워젤과 소다수</p>
+        </br></br>
+        <p class="re">문학 전문 출판사</p>
+    </div>
+
+    <div class="sh">
+        <a href="https://safehouse.kr/"><img src="safehouse.jpg"></a>
+        <p>소장 목록:</p>
+        <p class="highlight"></br></br>위치스 파이터즈</br></br>아홉수 가위</br></br>재와 물거품</br></br>칵테일, 러브, 좀비</br></br>냉면</p>
+        </br></br>
+        <p class="re">SF 장르 친화적</p>
+    </div>
+
+    <div class="wh">
+        <a href="https://www.wisdomhouse.co.kr/"><img src="wisdomhouse.jpg"></a>
+        <p>소장 목록:</p>
+        <p class="highlight"></br></br>파과</br></br>파쇄</p>
+        </br></br>
+        <p class="re">위즈덤하우스의 단편 소설 시리즈인 위픽은 기존 소설가뿐 아니라 논픽션 작가, 시인 등 다양한 작가들이 참여해 다양한 이야기를 접할 수 있다.</p>
+    </div>
+
+    <div class="float">
+        <ul>
+            <li><a href="index.html">홈</a></li>
+            <li><a href="pubhouse.html">출판사</a></li>
+            <li><a href="recc.html">추천 도서</a></li>
+            <li><a href="weekly.html">금주의 정보</a></li>
+            <li><a href="quarter.html">계간지</a></li>
+        </ul>
+    </div>
+
+    <script>
+
+
+    </script>
+</body>
+</html>
